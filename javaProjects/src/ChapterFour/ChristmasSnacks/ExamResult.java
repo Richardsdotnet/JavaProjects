@@ -18,9 +18,9 @@ public class ExamResult {
             status = input.nextInt();
             if (status == 1){passed += 1;}
                 else {failed += 1;}
-                studentCounter += 1;
-                passedCounter += 1;
-                failedCounter += 1;
+                studentCounter++;
+                passedCounter++;
+                failedCounter++;
             }
         System.out.printf("Passed: %d%nFailed: %d%n", passed,failed);
         if(passed > 8){

@@ -6,7 +6,7 @@ public class ClassAverageCalculator1 {
     int total;
     int grade;
 
-    int gradeCounter = 1;
+    int gradeCounter = 0;
 
     double average;
     Scanner input = new Scanner(System.in);
@@ -17,7 +17,7 @@ public class ClassAverageCalculator1 {
             System.out.println("Enter Grade");
             grade = input.nextInt();
             total  = total  + grade;
-            gradeCounter = gradeCounter + 1;
+            gradeCounter++;
         }
          average = (double) total / gradeCounter;
         System.out.printf("The total grade is: %d%n", total);

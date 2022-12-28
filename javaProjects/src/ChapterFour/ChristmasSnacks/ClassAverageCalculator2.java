@@ -16,7 +16,7 @@ public class ClassAverageCalculator2 {
         grade = input.nextInt();
         while (grade != -1) {
             total = total + grade;
-            gradeCounter = gradeCounter + 1;
+            gradeCounter++;
             System.out.println("Enter grade or -1 to quit");
             grade = input.nextInt();
         }

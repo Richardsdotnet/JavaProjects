@@ -14,8 +14,8 @@ public class CommissionCalculator {
         while (item != -1) {
             System.out.println("Enter item sold");
             item = input.nextInt();
-            totalItem = totalItem + item;
-            itemCounter += 1;
+            totalItem += item;
+            itemCounter++;
         }
     }
 
@@ -25,8 +25,8 @@ public class CommissionCalculator {
             while (amount != -1){
                 System.out.println("Enter item Amount");
                 amount = input.nextInt();
-                totalAmount = totalAmount + amount;
-                itemCounter += 1;
+                totalAmount += amount;
+                itemCounter++;
             }
 
         }
