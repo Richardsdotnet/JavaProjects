@@ -11,7 +11,6 @@ public class SalesCalculator {
     int productNumber;
     int productQuantity;
     double totalAmount;
-   // int itemCounter;
 
 
    public void productQuantity(){
