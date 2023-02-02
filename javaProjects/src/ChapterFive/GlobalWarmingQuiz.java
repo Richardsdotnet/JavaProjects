@@ -17,7 +17,7 @@ public class GlobalWarmingQuiz {
                 """);
         System.out.println("Enter the correct option from a - d ");
         String userInput = input.next();
-        if(userInput.equals("c")){
+        if(userInput.equalsIgnoreCase("c")){
             System.out.println("correct");
             correctAnswerCounter++;
         }else {
@@ -31,7 +31,7 @@ public class GlobalWarmingQuiz {
                 (d) ozone depletion
                 """);
          userInput = input.next();
-         if(userInput.equals("d")){
+         if(userInput.equalsIgnoreCase("d")){
              System.out.println("correct");
              correctAnswerCounter++;
          }else {
@@ -46,7 +46,7 @@ public class GlobalWarmingQuiz {
                 (d) CH4
                 """);
         userInput = input.next();
-        if(userInput.equals("c")){
+        if(userInput.equalsIgnoreCase("c")){
             System.out.println("correct");
             correctAnswerCounter++;
         }else {
@@ -61,7 +61,7 @@ public class GlobalWarmingQuiz {
                 (d) Cultivation in green houses so as to check pollution
                 """);
         userInput = input.next();
-        if(userInput.equals("c")){
+        if(userInput.equalsIgnoreCase("c")){
             System.out.println("correct");
             correctAnswerCounter++;
         }else {
@@ -76,7 +76,7 @@ public class GlobalWarmingQuiz {
                 (d) Vatnajokull
                 """);
         userInput = input.next();
-        if(userInput.equals("b")){
+        if(userInput.equalsIgnoreCase("b")){
             System.out.println("correct");
             correctAnswerCounter++;
         }else {

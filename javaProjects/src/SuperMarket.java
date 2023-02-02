@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
 public class SuperMarket {
+    Scanner userInput = new Scanner(System.in);
     public void MenuSelection() {
-        Scanner userInput = new Scanner(System.in);
+
         System.out.println("Welcome");
         System.out.println("press 1 for book\n press 2 for bag\n press 3 for shoe\n ");
         int selectMenu = userInput.nextInt();
@@ -23,12 +24,23 @@ public class SuperMarket {
             System.out.println("how many shoes do you want to buy?");
             int numberOfShoes = userInput.nextInt();
             int totalAmountOfShoes = numberOfShoes * priceOfShoe;
-            System.out.printf("Total amount of %d bags is %d%n", numberOfShoes, totalAmountOfShoes);
+            System.out.printf("Total amount of %d shoes is %d%n", numberOfShoes, totalAmountOfShoes);
         } else {
             System.out.println("invalid input");
-            System.out.println("Do you wish to Continue? press yes to continue, press no to terminate");
+            MenuSelection();
         }
 
+    }
+    int replayMenu = 0;
+    public void loopSuperMarket(){
+        System.out.println("Do you wish to Continue? press yes to continue, press no to terminate");
+        replayMenu = userInput.nextInt();
+        while (replayMenu != -1){
+            MenuSelection();
+            replayMenu++;
+
+        }
+        System.out.println("Thank you for yourrrr patronage");
     }
 }
 

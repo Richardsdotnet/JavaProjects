@@ -27,7 +27,7 @@ public class PetrolPurchase {
 
     public double pricePerLiter(double literPrice) {
         price = literPrice;
-        System.out.printf("%nTotal petrol price per liter of  is %f naira %n",price);
+        System.out.printf("%nTotal petrol price per liter is %f naira %n",price);
         return price;
     }
 

@@ -1,8 +1,5 @@
 package ChapterThree;
 
-
-import java.util.Scanner;
-
 public class Clock {
     private int hour;
     private int minute;

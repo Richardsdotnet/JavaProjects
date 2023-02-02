@@ -22,7 +22,7 @@ public class ParkingCharges {
         System.out.printf("Total receipts: $" + totalReceipts);
     }
 
-    public static double calculateCharges(double hours) {
+    public static  double calculateCharges(double hours) {
         double charge = 2.00;
         if (hours <= 3.0) {
             return charge;

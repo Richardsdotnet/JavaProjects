@@ -3,10 +3,10 @@ package ChapterThree;
 public class PetrolPurchaseMain {
     public static void main(String[] args) {
         PetrolPurchase petrolPurchase = new PetrolPurchase();
-        petrolPurchase.stationLocation("Mushin");
+        petrolPurchase.stationLocation("Lekki");
         petrolPurchase.petrolType("AGP");
-        petrolPurchase.petrolQuantity(45);
-        petrolPurchase.pricePerLiter(65);
+        petrolPurchase.petrolQuantity(50);
+        petrolPurchase.pricePerLiter(200);
         petrolPurchase.percentageDiscount(5);
         petrolPurchase.netPurchaseAmount();
     }

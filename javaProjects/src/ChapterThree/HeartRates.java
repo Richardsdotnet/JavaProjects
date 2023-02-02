@@ -4,7 +4,6 @@ public class HeartRates {
     private String firstName;
     private String lastName;
     private int month;
-
     private int day;
     private int yearOfBirth;
     private int maximumHeartRate;
@@ -76,7 +75,7 @@ public class HeartRates {
     }
 
     public int ageInYears() {
-        currentYear = 2022;
+       int currentYear = 2022;
         ageInYears = (currentYear) - (yearOfBirth);
         return ageInYears;
     }
@@ -88,10 +87,11 @@ public class HeartRates {
 
     }
 
-    public int targetHeartRatePercentage() {
-         intensity = 50;
+    public int targetHeartRatePercentage(int intensity) {
+        this.intensity = intensity;
         if (intensity >= 50 && intensity <= 85) {
-            targetHeartRate = (intensity) * (maximumHeartRate);
+            int heartRate = (intensity) * (maximumHeartRate);
+            targetHeartRate = (heartRate) / 100;
         }
         return targetHeartRate;
     }

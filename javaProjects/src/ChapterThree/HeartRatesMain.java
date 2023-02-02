@@ -14,7 +14,7 @@ public class HeartRatesMain {
         System.out.println("Enter intensity  from 50 - 85 to calculate THR: ");
         Scanner scanner = new Scanner(System.in);
         int intensity = scanner.nextInt();
-        System.out.println("The target heart rate percentage is: " + heartRates.targetHeartRatePercentage());
+        System.out.println("The target heart rate (percent) is: " + heartRates.targetHeartRatePercentage(intensity));
 
 
 

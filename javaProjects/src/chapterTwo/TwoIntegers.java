@@ -24,7 +24,7 @@ public class TwoIntegers {
 
     public int sumOfSquareOfTwoIntegers(int num1, int num2) {
          squareOfIntegers = (num1 * num1) + (num2 * num2);
-        System.out.printf("%d%n",squareOfIntegers);
+        System.out.printf("The sum of square of the two integers is: %d%n",squareOfIntegers);
         return squareOfIntegers;
     }
     public int sumOfSquareDifference(int num1, int num2) {
