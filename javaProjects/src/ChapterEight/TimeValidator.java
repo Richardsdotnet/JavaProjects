@@ -1,13 +1,13 @@
 package ChapterEight;
 
-public class Time {
+public class TimeValidator {
 
     private int second;
     private int minute;
     private int hour;
 
 
-    public Time(int second, int minute, int hour){
+    public TimeValidator(int second, int minute, int hour){
 
         this.second = second;
         this.minute = minute;
@@ -19,10 +19,10 @@ public class Time {
         validateSecond(second);
     }
 
-    public Time(int hour, int minute){
+    public TimeValidator(int hour, int minute){
         this(0, minute, hour);
     }
-    public Time(int hour){
+    public TimeValidator(int hour){
         this(hour, 0 );
     }
     public static void validateHour(int hour){
@@ -52,6 +52,7 @@ public class Time {
     }
 
     public int getMinute() {
+
         return minute;
     }
 
@@ -61,11 +62,16 @@ public class Time {
     }
 
     public int getHour() {
+
         return hour;
     }
 
     public void setHour(int hour) {
         validateMinute(hour);
         this.hour = hour;
+    }
+    public void displayTime(){
+        System.out.println("H: M: S");
+        System.out.printf( "%d" + ":" + "%d" + ":" + "%d", hour,minute,second);
     }
 }
