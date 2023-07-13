@@ -48,6 +48,7 @@ public void displayMenuUserInput() {
                  """);
 
              displayMenuUserInput();
+
         }
 
 
@@ -115,7 +116,8 @@ public void displayMenuUserInput() {
             case 8 -> System.out.println("Prepaid credit");
             default -> errorMessageDisplay();
 
-        }//loopUserChoice();
+        }
+        loopUserChoice();
 
 
     }

@@ -2,6 +2,7 @@ package ChapterThree;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.Scanner;
 
 public class HealthProfile {
     private String firstName;
@@ -28,15 +29,12 @@ public class HealthProfile {
 
 
     public void getFirstName() {
-        System.out.println(firstName);
+        System.out.println("First Name:" + firstName);
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+    public void getLastName() {
+        System.out.println("Last Name:" + lastName);
 
-    public String getLastName() {
-        return lastName;
     }
 
     public void setLastName(String lastName) {
@@ -51,8 +49,8 @@ public class HealthProfile {
         this.gender = gender;
     }
 
-    public int getHeight_In_Inches() {
-        return height_In_Inches;
+    public void getHeight_In_Inches() {
+        System.out.println("Height is:" + height_In_Inches);
     }
 
     public void setHeight_In_Inches(int height_In_Inches) {
@@ -73,12 +71,12 @@ public class HealthProfile {
     }
     public void age() {
         this.age = Period.between(dateOfBirth,localDate).getYears();
-        System.out.println(age);
+        System.out.println("Age:" + age);
     }
 
     public void maximumHeartRate() {
          maximumHeartRate = (220) - age;
-        System.out.println(maximumHeartRate);
+        System.out.println("Maximum Heart Rate:" + maximumHeartRate);
 
     }
 
@@ -90,5 +88,8 @@ public class HealthProfile {
         System.out.println("The target heart rate is " + targetHeartRate);
     }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 }
 

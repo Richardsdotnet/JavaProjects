@@ -7,8 +7,7 @@ public class AirConditioner {
 
     public void setOn(boolean power ) {
         temperature = 16;
-        if(power == true)
-        isOn = true;
+        if(power == true) isOn = true;
     }
 
     public boolean getPower() {
