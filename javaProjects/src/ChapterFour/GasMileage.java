@@ -13,8 +13,8 @@ public class GasMileage {
        while(milesDriven != -1){
            System.out.println("Enter miles covered");
             milesDriven = input.nextInt();
-            totalMilesDriven = totalMilesDriven + milesDriven;
-           milesDrivenCounter += 1;
+            totalMilesDriven +=  milesDriven;
+           milesDrivenCounter++;
        }
    }
 
